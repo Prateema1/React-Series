@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+<!-- <h1>Hello World Program</h1> -->
+    <div id="root"></div>
+        <!-- <script>
+            A simple example using JavaScript
+            const heading = document.createElement("h1");
+            heading.innerHTML = "Namaste React from JavaScript";
+
+            const root = document.getElementById("root");
+            root.appendChild(heading);
+        </script> -->
+   
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+    //Create a heading using React
+    const heading = React.createElement("h1", {}, "Hello World From React");
+     //create a root inside react DOM
+     const root = ReactDOM.createRoot(document.getElementById("root"));
+//To render the heading inside root inside REACT DOM (root is the place where all react code runs)
+     root.render(heading);
+
+</script>
+</body>
+</html>
