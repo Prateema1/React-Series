@@ -28,7 +28,7 @@
     ])
   ])
   
-  console.log(parent);
+  console.log(parent); //object
 
   const heading = React.createElement("h1", 
   {
