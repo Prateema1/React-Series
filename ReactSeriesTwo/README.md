@@ -63,3 +63,8 @@
 - For production build: npx parcel build index.html
 - We have to remember to remove main: App.js from package.json file because it create a conflict for entry point. we do not need that when we use parcel.
 
+
+# Browserslist
+
+- To let our project know about what browsers they support. It will be configured inside package.json file as an array of strings. The mentioned array will definetly be supported but the other browsers that are not mentioned will also be supported..
+
