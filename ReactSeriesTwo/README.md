@@ -68,3 +68,20 @@
 
 - To let our project know about what browsers they support. It will be configured inside package.json file as an array of strings. The mentioned array will definetly be supported but the other browsers that are not mentioned will also be supported..
 
+# CORE OF REACT IN THE BEGINING
+
+- To create elements before:
+
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "Hello React"
+);
+
+## JSX (JavaScript Syntax Extension)
+
+- We can write React without using JSX also. JSX is not a part of React. They are both different.
+- But JSX makes it easier for developers to write code.
+- JSX is not HTML in JavaScript but it is like a HTML-like or XML-like syntax.
+
+
