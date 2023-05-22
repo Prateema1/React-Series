@@ -17,6 +17,8 @@
   
   console.log(parent); //object
 
+  //React.createElement ==> ReactElement-JS Object ==> HTMLElement(render)
+
   const heading = React.createElement("h1", 
   {
     id: "heading"
@@ -27,6 +29,11 @@
   //Create React element using JSX
   const jsxHeading = <h1 id="heading">React using JS</h1>
   console.log(jsxHeading, "JSX HEADING");
+
+  //React Functional Component
+  const HeadingComponent = () => {
+    return <h1>Hello React Functional Component</h1>
+  }
 
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
