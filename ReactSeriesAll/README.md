@@ -142,3 +142,18 @@ const heading = React.createElement(
 
   -- Curly braces anywhere inside JSX , we can write any JS expression inside it.
   -- Also, JSX sanitizes the data first and then executed in case of Cross Site Scripting attack.
+
+  - Whenever we write JSX, it can only have a single parent at the top level (root), i.e JSX expressions must have only one parent element.
+  - For nested structure, we can create a div and inside div we can write any element.
+
+  ## React.Fragment
+
+  -- The solution to writing div as a wrapper parent.
+  -- Instead we can wrap elements, inside <React.Fragment></React.Fragment>
+  -- It behaves like an empty tag
+  -- But it can make our code look a bit ugly, JSX actually created an empty tag.
+  -- For example: <></>
+
+  ## Making Code Modular
+
+  -- Whenever we have a lot of use of a feature. For example : A restaurant card, always create a separate component for it.
