@@ -142,3 +142,32 @@ const heading = React.createElement(
 
   -- Curly braces anywhere inside JSX , we can write any JS expression inside it.
   -- Also, JSX sanitizes the data first and then executed in case of Cross Site Scripting attack.
+
+  - Whenever we write JSX, it can only have a single parent at the top level (root), i.e JSX expressions must have only one parent element.
+  - For nested structure, we can create a div and inside div we can write any element.
+
+  ## React.Fragment
+
+  -- The solution to writing div as a wrapper parent.
+  -- Instead we can wrap elements, inside <React.Fragment></React.Fragment>
+  -- It behaves like an empty tag
+  -- But it can make our code look a bit ugly, JSX actually created an empty tag.
+  -- For example: <></>
+
+  ## Making Code Modular
+
+  -- Whenever we have a lot of use of a feature. For example : A restaurant card, always create a separate component for it.
+
+  ## props (properties)
+
+  -- Whenever we want to pass dynamic data to our component, we use props. Props are just like arguments to normal functions.
+
+  -- React takes the props (arguments in the Component function) wraps everything inside a prop object and then passes it to the component function as parameters.
+
+## Config Driven UI
+
+-- Websites driven by data/config is known as Config Driven UI. Contorlling how our UI looks like based on data. The data comes from backend.
+
+-- For example: In case of a food delivery website, Let's suppose, some restaurant have discount offers in Bangalore and not for Delhi. In this case, we will not be buiilding different UI for each location, right? We will simply have config driven data that helps to differentite data based on need and apply it dynamically.
+
+-- The config will itself drive the UI.
