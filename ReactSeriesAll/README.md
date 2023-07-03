@@ -157,3 +157,17 @@ const heading = React.createElement(
   ## Making Code Modular
 
   -- Whenever we have a lot of use of a feature. For example : A restaurant card, always create a separate component for it.
+
+  ## props (properties)
+
+  -- Whenever we want to pass dynamic data to our component, we use props. Props are just like arguments to normal functions.
+
+  -- React takes the props (arguments in the Component function) wraps everything inside a prop object and then passes it to the component function as parameters.
+
+## Config Driven UI
+
+-- Websites driven by data/config is known as Config Driven UI. Contorlling how our UI looks like based on data. The data comes from backend.
+
+-- For example: In case of a food delivery website, Let's suppose, some restaurant have discount offers in Bangalore and not for Delhi. In this case, we will not be buiilding different UI for each location, right? We will simply have config driven data that helps to differentite data based on need and apply it dynamically.
+
+-- The config will itself drive the UI.
