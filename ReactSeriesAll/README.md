@@ -171,3 +171,18 @@ const heading = React.createElement(
 -- For example: In case of a food delivery website, Let's suppose, some restaurant have discount offers in Bangalore and not for Delhi. In this case, we will not be buiilding different UI for each location, right? We will simply have config driven data that helps to differentite data based on need and apply it dynamically.
 
 -- The config will itself drive the UI.
+
+## keys in React
+
+-- Whenever we loop over an array using map or any other function, we need to provide unique key to each child in the list.
+
+-- They need to be uniquely represented because of the following reasons:
+
+--- Let's suppose we have a list of restaurants.
+--- After some time, a new restaurant gets added to the first of the list.
+--- Now, if there were no id's, React will re-render all the restaurant cards as it cannot uniquely identify the restaurant in this case.
+--- Similarly, the same happes again and again as new restaurant cards gets added to the list.
+--- But, if we gice each restaurant card with unique id and now new restaurant card also comes with its own unique id (suppose: xyz), now, React will only render the new restaurant card and not all the existing restaurant cards.
+--- It optimizes the performance significantly.
+
+--- So, we should make a habit to include keys.
