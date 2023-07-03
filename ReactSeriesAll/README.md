@@ -186,3 +186,6 @@ const heading = React.createElement(
 --- It optimizes the performance significantly.
 
 --- So, we should make a habit to include keys.
+
+--- Also, sometimes we tend to put the index as the key. But, REACT offical docs also suggest not to use the index as the key.
+--- This is because, it is possible that the order of the list items may be chaged or deleted depending upon the scenario.
