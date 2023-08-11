@@ -1,2 +1,0 @@
-# React-Series
-# The Inception
