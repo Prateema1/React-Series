@@ -683,3 +683,69 @@ it mounted on the DOM, this will be called.
 - Slice (cartSlice)
   -- dispatch(action)
   -- selector
+
+  ## Types of testing (developers can do)
+
+  -- Unit Testing
+  -- Integration Testing
+  -- End to End testing
+
+  ### Unit testing
+
+  -- Testing one specific unit of our application is known as unit testing. Example: Can be a test of a component in isolation.
+
+  ### Integration Testing
+
+  -- Testing the integration of components. As we know, our compoennts talk to each other to make a feature. Testing such feature is known as integration testing. We will test the flow of components.
+
+  ### End To End Testing (e2e)
+
+  -- This test starts from when user lands on the page to leaving the app. Testing user flow through the application.
+
+  ## Testing Library
+
+  ### React testing Library
+
+  -- It is built on top of DOM testing library.
+
+  -- As we have built our app from scratch and not used create-react-app, we will need to integrate the testing library ourselves from scratch.
+
+  -- React Testing library uses Jest.
+
+  -- RTL uses Jest behind the scenes, so we need both to test our application.
+
+  ### Jest
+
+  --- Jest is a JavaScript Testing framework.
+
+  ## Setting up testing in our app
+
+  -- Install React Testing Library
+  -- Install jest
+  -- Install babel dependencies as we are using jest with babel
+  -- Configure babel
+  -- Configure Parcel config file to disable default babel transpilation.
+  -- Jest configuration : npx jest --init
+  -- Install jsdom library
+  -- Install @babel/preset-react to make JSX work in test cases.
+  -- Include @babel/preset-react inside babel config
+  -- Install @testing-library/jest-dom
+
+  ## Overriding default babel configuration that comes with parcel
+
+  -- As parcel comes with default babel configuration for transpilation, we need to configure parcel config file to disable default babel transpilation.
+
+-- We can do that by creating .parcelrc file and write the configuration from official parcel documentation.
+https://parceljs.org/languages/javascript/#usage-with-other-tools
+
+## Basics Of Testing in React
+
+-- Render component
+-- Querying
+-- Assertion
+
+### How to manage large number of test cases
+
+-- We can use describe function to group multiple test cases into a single block.
+
+-- We can slo write it instead of test. It is just an alias for test. Both works the same way.
